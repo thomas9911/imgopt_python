@@ -103,3 +103,15 @@ def test_convert_explicit_raises_on_invalid_output_format(tmp_path):
     with pytest.raises(FileNotFoundError):
         # file should not exist
         os.lstat(path).st_size
+
+
+def test_convert_raises_on_invalid_input_type(tmp_path):
+    path = tmp_path / "out.txt"
+    with pytest.raises(TypeError):
+        convert_explicit(123456789, str(path))
+
+
+def test_convert_explicit_raises_on_invalid_input_type(tmp_path):
+    path = tmp_path / "out.txt"
+    with pytest.raises(TypeError):
+        convert_explicit("tests/data/pexels-abet-llacer-919734.jpg", str(path))

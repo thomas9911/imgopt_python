@@ -1,3 +1,4 @@
 pytest
+pdoc
 maturin
 black

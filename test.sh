@@ -1,2 +1,4 @@
+#! /bin/sh
+
 ./build.sh
-pytest
+pytest --doctest-modules --ignore examples
