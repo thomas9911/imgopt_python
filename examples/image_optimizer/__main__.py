@@ -21,13 +21,13 @@ if __name__ == "__main__":
     curdir = Path(".").resolve().parts[-1]
     if curdir == "examples":
         # by doing `python ./image_optimizer`
-        images = Path(".").glob("image_optimzer/images/*")
-    elif curdir == "image_optimzer":
+        images = Path(".").glob("image_optimizer/images/*")
+    elif curdir == "image_optimizer":
         # by doing `python ./image_optimizer/__main__.py`
         images = Path(".").glob("images/*")
     elif curdir == "imgopt_python":
         # by doing `python ./examples/image_optimizer`
-        images = Path(".").glob("examples/image_optimzer/images/*")
+        images = Path(".").glob("examples/image_optimizer/images/*")
     else:
         raise "Invalid folder"
 

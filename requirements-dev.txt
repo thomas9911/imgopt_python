@@ -1,4 +1,0 @@
-pytest
-pdoc
-maturin
-black

@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "webserver"
+version = "0.1.0"
+description = ""
+authors = ["Thomas <thomastimmer11@hotmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Flask = "^2.0.1"
+# imgopt = { path = "../../target/wheels/imgopt-0.1.0-cp39-none-win_amd64.whl" }
+imgopt = { path = "../../" }
+
+[tool.poetry.dev-dependencies]
+black = "^21.9b0"
+
+# [[tool.poetry.dependencies.imgopt]]
+# path = "../../target/wheels/imgopt-0.1.0-cp39-none-win_amd64.whl" 
+# markers = "sys_platform == 'win32'"
+
+# [[tool.poetry.dependencies.imgopt]]
+# # path = "../../target/wheels/imgopt-0.1.0-cp39-none-win_amd64.whl" 
+# # markers = "sys_platform == 'linux'"
+# path = "../../" 
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
